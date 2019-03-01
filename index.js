@@ -1,10 +1,8 @@
 const express = require("express");
+const apiRoute = require('./routes/api');
 
 const app = express();
-
-app.get("/", (req, res) => {
-  res.send("hello world");
-});
+app.use('/api', apiRoute);
 
 const PORT = process.env.port || 3000;
 app.listen(PORT);
