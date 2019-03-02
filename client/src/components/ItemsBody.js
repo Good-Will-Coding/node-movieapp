@@ -2,11 +2,12 @@ import React, { Component } from "react";
 import ListItems from "./ListItems";
 import ListItem from "./ListItem";
 import axios from "axios";
+// import _ from 'lodash';
 
 class ItemBody extends Component {
   state = {
     loading: true,
-    todo: {}
+    todos: {}
   };
 
   // todosLoading = () => {
@@ -20,17 +21,25 @@ class ItemBody extends Component {
       console.log(response);
       this.setState({
         loading: false,
-        todo: response.data
+        todos: response.data
       });
     });
   }
 
+  renderTodos = () => {
+    const { todos } = this.state;
+    return todos.map(todo => {
+      return (
+        <ListItem key={todo.id} title={todo.title} isDone={todo.is_done} />
+      );
+    });
+  };
+
   render() {
-    return (
-      <ListItems>
-        <ListItem text="hello" />
-      </ListItems>
-    );
+    if (this.state.loading) {
+      return <h1>Loading...</h1>;
+    }
+    return <ListItems>{this.renderTodos()}</ListItems>;
   }
 }
 
