@@ -12,5 +12,5 @@ app.use(
 
 app.use("/api", apiRoute);
 
-const PORT = process.env.port || 3000;
+const PORT = process.env.port || 8000;
 app.listen(PORT);
