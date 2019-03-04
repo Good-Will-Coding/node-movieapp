@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import SingleTodoList from "./SingleTodoList";
+import CreateEditTodo from './CreateEditTodo';
 
 class TodoCard extends Component {
   state = {
@@ -17,7 +18,7 @@ class TodoCard extends Component {
   render() {
     if (this.state.editing) {
         return (
-            <div>Editing!</div>
+            <CreateEditTodo />
         )
     }
 
