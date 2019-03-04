@@ -25,6 +25,7 @@ class SingleItem extends Component {
       <TodoCard
         title={this.state.todo.title}
         isDone={this.state.todo.is_done}
+        id={this.state.todo.id}
       />
     );
   }
