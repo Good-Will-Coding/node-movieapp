@@ -45,7 +45,7 @@ class CreateTodoEdit extends Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <div className="form-group">
-          <label htmlFor="title">Title of todo</label>
+          <label htmlFor="title">Title of movie</label>
           <input
             type="text"
             name="title"
@@ -56,7 +56,7 @@ class CreateTodoEdit extends Component {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="title">Todo Completed?</label>
+          <label htmlFor="title">Movie Watched?</label>
           <select
             type="text"
             name="isDone"

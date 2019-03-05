@@ -3,14 +3,14 @@ import TopNav from "./TopNav";
 import ItemsBody from "./ItemsBody";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import SingleItem from "./SingleItem";
-import CreateTodo from "./CreateTodo";
+import CreateTodo from "./CreateMovie";
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
         <div>
-          <TopNav title="Todo" />
+          <TopNav title="Movie List" />
           <div className="container">
             <Switch>
               <Route path="/new" component={CreateTodo} />

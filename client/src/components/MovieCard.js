@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import SingleTodoList from "./SingleTodoList";
-import CreateEditTodo from "./CreateEditTodo";
-import axios from "axios";
+import SingleTodoList from "./SingleMovieList";
+import CreateTodoEdit from "./CreateMovieEdit";
 
 class TodoCard extends Component {
   state = {
@@ -26,7 +25,7 @@ class TodoCard extends Component {
   render() {
     if (this.state.editing) {
       return (
-        <CreateEditTodo
+        <CreateTodoEdit
           title={title}
           isDone={isDone}
           toggleEdit={this.onEdit}

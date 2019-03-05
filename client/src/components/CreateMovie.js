@@ -1,9 +1,9 @@
 import React from 'react'
-import CreateEditTodo from './CreateEditTodo';
+import CreateTodoEdit from './CreateMovieEdit';
 
 const CreateTodo = () => {
   return (
-    <CreateEditTodo />
+    <CreateTodoEdit />
   )
 }
 

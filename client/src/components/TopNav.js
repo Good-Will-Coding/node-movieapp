@@ -8,7 +8,7 @@ const TopNav = ({ title }) => {
         <Link to="/" className="navbar-brand ">{title}</Link>
       </nav>
       <div className="navbar fixed-bottom">
-      <Link to="/new" className="btn btn-outline-primary w-100 p-3">Add new Todo</Link>
+      <Link to="/new" className="btn btn-outline-primary w-100 p-3">Add new movie</Link>
       </div>
     </div>
   );

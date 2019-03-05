@@ -4,19 +4,19 @@ import { withRouter } from "react-router-dom";
 
 const SingleTodoList = ({ title, isDone, onEdit, id, history }) => {
   return (
-    <div className={`card ${isDone ? "bg-success" : "bg-danger"} text-white`}>
+    <div className="card text-black">
       <div className="card-block">
         <div className="card-title">
-          <h4>{title}</h4>
+          <h4 className="ml-5">{title}</h4>
         </div>
-        <div className="card-text">
+        <div className="card-text ml-5">
           {isDone
-            ? "This todo has been completed"
-            : "This todo has yet to be finished"}
+            ? "This movie has been watched"
+            : "This movie has yet to be watched"}
         </div>
         <div className="d-flex justify-content-between align-items-end">
           <button
-            className="btn btn-link text-white"
+            className="btn btn-link"
             onClick={() => {
               axios.delete(`/api/todo/${id}`).then(() => {
                 history.push("/");
@@ -25,7 +25,7 @@ const SingleTodoList = ({ title, isDone, onEdit, id, history }) => {
           >
             Delete
           </button>
-          <button className="btn btn-link text-white" onClick={onEdit}>
+          <button className="btn btn-link" onClick={onEdit}>
             Edit
           </button>
         </div>

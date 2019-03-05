@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import TodoCard from "./TodoCard";
+import TodoCard from "./MovieCard";
 
 class SingleItem extends Component {
   state = {
