@@ -60,7 +60,7 @@ router.delete("/:id", (req, res) => {
 router.get("/:id", (req, res) => {
   db("todo")
     .where({ id: req.params.id })
-    .select()
+    .first()
     .then(data => {
       res.send(data);
     });
