@@ -1,6 +1,6 @@
-# Movie List
+# Movies to Watch List
 
-Movie List is a web application that uses React, React Router, Node.js, Express.js, and PostgreSQL
+Movie to Watch is a web application that uses React, React Router, Node.js, Express.js, and PostgreSQL.
 
 The goal of this project was to create an application to keep track of movies that a user has watch or hasn't watched yet.
 
